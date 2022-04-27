@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F5A4ADA92819B46000CCE178 /* FoodGuruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADA82819B46000CCE178 /* FoodGuruApp.swift */; };
-		F5A4ADAD2819B46200CCE178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADAC2819B46200CCE178 /* Assets.xcassets */; };
 		F5A4ADB02819B46200CCE178 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADAF2819B46200CCE178 /* Preview Assets.xcassets */; };
 		F5A4ADBA2819B46200CCE178 /* FoodGuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADB92819B46200CCE178 /* FoodGuruTests.swift */; };
 		F5A4ADC42819B46300CCE178 /* FoodGuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADC32819B46300CCE178 /* FoodGuruUITests.swift */; };
 		F5A4ADC62819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */; };
 		F5A4ADD72819BA5C00CCE178 /* LandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */; };
-		F5A4ADDD2819BAFA00CCE178 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADDC2819BAFA00CCE178 /* LandingViewModel.swift */; };
+		F5A4ADE02819C79400CCE178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADDF2819C79400CCE178 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		F5A4ADA52819B46000CCE178 /* FoodGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A4ADA82819B46000CCE178 /* FoodGuruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruApp.swift; sourceTree = "<group>"; };
-		F5A4ADAC2819B46200CCE178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A4ADAF2819B46200CCE178 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5A4ADB52819B46200CCE178 /* FoodGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A4ADB92819B46200CCE178 /* FoodGuruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruTests.swift; sourceTree = "<group>"; };
@@ -45,7 +43,7 @@
 		F5A4ADC32819B46300CCE178 /* FoodGuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruUITests.swift; sourceTree = "<group>"; };
 		F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreen.swift; sourceTree = "<group>"; };
-		F5A4ADDC2819BAFA00CCE178 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		F5A4ADDF2819C79400CCE178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,7 @@
 		F5A4ADD52819B9E900CCE178 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				F5A4ADAC2819B46200CCE178 /* Assets.xcassets */,
+				F5A4ADDF2819C79400CCE178 /* Assets.xcassets */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -157,7 +155,6 @@
 		F5A4ADD82819BA7300CCE178 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				F5A4ADDB2819BAB900CCE178 /* ViewModels */,
 				F5A4ADDA2819BAA400CCE178 /* Screens */,
 				F5A4ADD92819BA7D00CCE178 /* Views */,
 			);
@@ -177,14 +174,6 @@
 				F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		F5A4ADDB2819BAB900CCE178 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F5A4ADDC2819BAFA00CCE178 /* LandingViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F5A4ADDE2819BFEC00CCE178 /* Views */ = {
@@ -298,8 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A4ADE02819C79400CCE178 /* Assets.xcassets in Resources */,
 				F5A4ADB02819B46200CCE178 /* Preview Assets.xcassets in Resources */,
-				F5A4ADAD2819B46200CCE178 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A4ADA92819B46000CCE178 /* FoodGuruApp.swift in Sources */,
-				F5A4ADDD2819BAFA00CCE178 /* LandingViewModel.swift in Sources */,
 				F5A4ADD72819BA5C00CCE178 /* LandingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
