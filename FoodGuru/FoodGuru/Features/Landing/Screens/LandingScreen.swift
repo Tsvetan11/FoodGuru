@@ -21,17 +21,31 @@ struct LandingScreen: View {
 		static let labelText = "Welcome to FoodGuru your best friend when you are hungry"
 		static let buttonTitle = "Get started"
 		static let buttonTopPadding: CGFloat = 100
+		static let buttonBottomPadding: CGFloat = 20
 		static let buttonWidth: CGFloat = 120
 		static let buttonHeight: CGFloat = 50
 		static let buttonCornerRadius: CGFloat = 30
 		static let progeressViewScale: CGFloat = 1.5
-		static let delay = DispatchTime.now() + 1
+		static let logoAnimationWidth: CGFloat = 70
+		static let animationDuration = 1.0
 	}
 
 	// MARK: - Variables
 
 	@State private var animate = false
 	@State private var showHomeScreen = false
+	
+	@State private var animateLogo = false {
+		didSet {
+			if animateLogo {
+				DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+					withAnimation(.easeInOut(duration: Constants.animationDuration)) {
+						animateLogo = false
+					}
+				}
+			}
+		}
+	}
 
 	// MARK: - Body
 
@@ -63,9 +77,14 @@ extension LandingScreen {
 	private var logo: some View {
 		Image(uiImage: Constants.logoImage)
 			.resizable()
-			.frame(width: Constants.logoWidth,
+			.frame(width: animateLogo ? Constants.logoWidth - Constants.logoAnimationWidth : Constants.logoWidth,
 				   height: Constants.logoHeight)
 			.padding(.bottom, Constants.logoBottomPadding)
+			.onTapGesture {
+				withAnimation(.easeInOut(duration: Constants.animationDuration)) {
+					animateLogo = true
+				}
+			}
 	}
 
 	private var label: some View {
@@ -82,7 +101,7 @@ extension LandingScreen {
 				animate.toggle()
 			}
 
-			DispatchQueue.main.asyncAfter(deadline: Constants.delay) {
+			DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 				showHomeScreen.toggle()
 
 				withAnimation {
@@ -98,6 +117,7 @@ extension LandingScreen {
 				.cornerRadius(Constants.buttonCornerRadius)
 		)
 		.padding(.top, Constants.buttonTopPadding)
+		.padding(.bottom, Constants.buttonBottomPadding)
 	}
 
 	private var buttonLoadingView: some View {
