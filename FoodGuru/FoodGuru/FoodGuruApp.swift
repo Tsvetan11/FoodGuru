@@ -11,7 +11,10 @@ import SwiftUI
 struct FoodGuruApp: App {
     var body: some Scene {
         WindowGroup {
-			Text("Hello world!")
+			NavigationView {
+				LandingScreen()
+			}
+			.navigationViewStyle(StackNavigationViewStyle())
         }
 	}
 }
