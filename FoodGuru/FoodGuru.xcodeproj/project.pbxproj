@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2DF6814AC76480CA8A0389 /* libPods-FoodGuru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 693302E80E15D576F772F26F /* libPods-FoodGuru.a */; };
 		F5A4ADA92819B46000CCE178 /* FoodGuruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADA82819B46000CCE178 /* FoodGuruApp.swift */; };
 		F5A4ADB02819B46200CCE178 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADAF2819B46200CCE178 /* Preview Assets.xcassets */; };
 		F5A4ADBA2819B46200CCE178 /* FoodGuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADB92819B46200CCE178 /* FoodGuruTests.swift */; };
@@ -15,6 +16,7 @@
 		F5A4ADD72819BA5C00CCE178 /* LandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */; };
 		F5A4ADE02819C79400CCE178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADDF2819C79400CCE178 /* Assets.xcassets */; };
 		F5CDE8EA2821850200FEF223 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5CDE8EC2821850200FEF223 /* Localizable.strings */; };
+		F5CDE8F0282189E200FEF223 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CDE8EF282189E200FEF223 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E7840E1D4D618A63B6901D6 /* Pods-FoodGuru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodGuru.release.xcconfig"; path = "Target Support Files/Pods-FoodGuru/Pods-FoodGuru.release.xcconfig"; sourceTree = "<group>"; };
+		399CF94947E42C900C3DB10B /* Pods-FoodGuru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodGuru.debug.xcconfig"; path = "Target Support Files/Pods-FoodGuru/Pods-FoodGuru.debug.xcconfig"; sourceTree = "<group>"; };
+		693302E80E15D576F772F26F /* libPods-FoodGuru.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FoodGuru.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A4ADA52819B46000CCE178 /* FoodGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A4ADA82819B46000CCE178 /* FoodGuruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruApp.swift; sourceTree = "<group>"; };
 		F5A4ADAF2819B46200CCE178 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		F5A4ADDF2819C79400CCE178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		F5CDE8EB2821850200FEF223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5CDE8ED2821850A00FEF223 /* bg-BG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "bg-BG"; path = "bg-BG.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F5CDE8EF282189E200FEF223 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = "FoodGuru/Base/Constants/Supporting Files/R.generated.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2DF6814AC76480CA8A0389 /* libPods-FoodGuru.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57F9BA59B2875022CAB0E8E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				693302E80E15D576F772F26F /* libPods-FoodGuru.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6104867F50F9DD9905AA629 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				399CF94947E42C900C3DB10B /* Pods-FoodGuru.debug.xcconfig */,
+				1E7840E1D4D618A63B6901D6 /* Pods-FoodGuru.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5318BA328218D1200A5DC76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5CDE8EF282189E200FEF223 /* R.generated.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F5A4AD9C2819B46000CCE178 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +113,8 @@
 				F5A4ADB82819B46200CCE178 /* FoodGuruTests */,
 				F5A4ADC22819B46300CCE178 /* FoodGuruUITests */,
 				F5A4ADA62819B46000CCE178 /* Products */,
+				E6104867F50F9DD9905AA629 /* Pods */,
+				57F9BA59B2875022CAB0E8E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +184,7 @@
 		F5A4ADD52819B9E900CCE178 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				F5318BA328218D1200A5DC76 /* Supporting Files */,
 				F5A4ADDF2819C79400CCE178 /* Assets.xcassets */,
 				F5CDE8E5282183F200FEF223 /* Localization */,
 			);
@@ -202,6 +237,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5A4ADC92819B46300CCE178 /* Build configuration list for PBXNativeTarget "FoodGuru" */;
 			buildPhases = (
+				5855C7A63B498EC83E9CFE93 /* [CP] Check Pods Manifest.lock */,
+				F5CDE8EE282188AD00FEF223 /* R.swift */,
 				F5A4ADA12819B46000CCE178 /* Sources */,
 				F5A4ADA22819B46000CCE178 /* Frameworks */,
 				F5A4ADA32819B46000CCE178 /* Resources */,
@@ -322,6 +359,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5855C7A63B498EC83E9CFE93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodGuru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CDE8EE282188AD00FEF223 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5A4ADA12819B46000CCE178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -329,6 +411,7 @@
 			files = (
 				F5A4ADA92819B46000CCE178 /* FoodGuruApp.swift in Sources */,
 				F5A4ADD72819BA5C00CCE178 /* LandingScreen.swift in Sources */,
+				F5CDE8F0282189E200FEF223 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +578,7 @@
 		};
 		F5A4ADCA2819B46300CCE178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399CF94947E42C900C3DB10B /* Pods-FoodGuru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -525,6 +609,7 @@
 		};
 		F5A4ADCB2819B46300CCE178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7840E1D4D618A63B6901D6 /* Pods-FoodGuru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
