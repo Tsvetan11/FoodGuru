@@ -14,6 +14,7 @@
 		F5A4ADC62819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */; };
 		F5A4ADD72819BA5C00CCE178 /* LandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */; };
 		F5A4ADE02819C79400CCE178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADDF2819C79400CCE178 /* Assets.xcassets */; };
+		F5CDE8EA2821850200FEF223 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5CDE8EC2821850200FEF223 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreen.swift; sourceTree = "<group>"; };
 		F5A4ADDF2819C79400CCE178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		F5CDE8EB2821850200FEF223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F5CDE8ED2821850A00FEF223 /* bg-BG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "bg-BG"; path = "bg-BG.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				F5A4ADDF2819C79400CCE178 /* Assets.xcassets */,
+				F5CDE8E5282183F200FEF223 /* Localization */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -181,6 +185,14 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F5CDE8E5282183F200FEF223 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F5CDE8EC2821850200FEF223 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +281,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"bg-BG",
 			);
 			mainGroup = F5A4AD9C2819B46000CCE178;
 			productRefGroup = F5A4ADA62819B46000CCE178 /* Products */;
@@ -288,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A4ADE02819C79400CCE178 /* Assets.xcassets in Resources */,
+				F5CDE8EA2821850200FEF223 /* Localizable.strings in Resources */,
 				F5A4ADB02819B46200CCE178 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +363,18 @@
 			targetProxy = F5A4ADC02819B46300CCE178 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5CDE8EC2821850200FEF223 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5CDE8EB2821850200FEF223 /* en */,
+				F5CDE8ED2821850A00FEF223 /* bg-BG */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F5A4ADC72819B46300CCE178 /* Debug */ = {
