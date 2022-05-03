@@ -18,8 +18,8 @@ struct LandingScreen: View {
 		static let logoImage = UIImage(named: "FoodGuru")!
 		static let logoBottomPadding: CGFloat = 20
 		static let labelHorizontalPadding: CGFloat = 20
-		static let labelText = "Welcome to FoodGuru your best friend when you are hungry"
-		static let buttonTitle = "Get started"
+		static let labelText = NSLocalizedString("landing_screen_title", comment: "")
+		static let buttonTitle = NSLocalizedString("landing_screen_get_started_button_title", comment: "")
 		static let buttonTopPadding: CGFloat = 100
 		static let buttonBottomPadding: CGFloat = 20
 		static let buttonWidth: CGFloat = 120
@@ -51,7 +51,7 @@ struct LandingScreen: View {
 
     var body: some View {
 		VStack {
-			NavigationLink(destination: Text("Test"), isActive: $showHomeScreen) { EmptyView() }
+			NavigationLink(destination: Text(""), isActive: $showHomeScreen) { EmptyView() }
 
 			logo
 

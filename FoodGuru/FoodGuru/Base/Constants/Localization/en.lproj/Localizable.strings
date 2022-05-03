@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  FoodGuru
+
+  Created by Tsvetan Tsvetanov on 3.05.22.
+  
+*/
+
+//MARK: - Landing
+
+"landing_screen_title" = "Welcome to FoodGuru your best friend when you are hungry";
+"landing_screen_get_started_button_title" = "Get started";
