@@ -15,11 +15,11 @@ struct LandingScreen: View {
 		static let screenSize = UIScreen.main.bounds.size
 		static let logoWidth: CGFloat = screenSize.width * 0.5
 		static let logoHeight: CGFloat = screenSize.width * 0.5
-		static let logoImage = UIImage(named: "FoodGuru")!
+		static let logoImage = UIImage(named: R.image.foodGuru.name)!
 		static let logoBottomPadding: CGFloat = 20
 		static let labelHorizontalPadding: CGFloat = 20
-		static let labelText = NSLocalizedString("landing_screen_title", comment: "")
-		static let buttonTitle = NSLocalizedString("landing_screen_get_started_button_title", comment: "")
+		static let labelText = R.string.localizable.landing_screen_title()
+		static let buttonTitle = R.string.localizable.landing_screen_get_started_button_title()
 		static let buttonTopPadding: CGFloat = 100
 		static let buttonBottomPadding: CGFloat = 20
 		static let buttonWidth: CGFloat = 120
