@@ -11,8 +11,6 @@
 		F5A4ADA92819B46000CCE178 /* FoodGuruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADA82819B46000CCE178 /* FoodGuruApp.swift */; };
 		F5A4ADB02819B46200CCE178 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADAF2819B46200CCE178 /* Preview Assets.xcassets */; };
 		F5A4ADBA2819B46200CCE178 /* FoodGuruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADB92819B46200CCE178 /* FoodGuruTests.swift */; };
-		F5A4ADC42819B46300CCE178 /* FoodGuruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADC32819B46300CCE178 /* FoodGuruUITests.swift */; };
-		F5A4ADC62819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */; };
 		F5A4ADD72819BA5C00CCE178 /* LandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */; };
 		F5A4ADE02819C79400CCE178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A4ADDF2819C79400CCE178 /* Assets.xcassets */; };
 		F5CDE8EA2821850200FEF223 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5CDE8EC2821850200FEF223 /* Localizable.strings */; };
@@ -46,8 +44,6 @@
 		F5A4ADB52819B46200CCE178 /* FoodGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A4ADB92819B46200CCE178 /* FoodGuruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruTests.swift; sourceTree = "<group>"; };
 		F5A4ADBF2819B46300CCE178 /* FoodGuruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodGuruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5A4ADC32819B46300CCE178 /* FoodGuruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruUITests.swift; sourceTree = "<group>"; };
-		F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGuruUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F5A4ADD62819BA5C00CCE178 /* LandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreen.swift; sourceTree = "<group>"; };
 		F5A4ADDF2819C79400CCE178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		F5CDE8EB2821850200FEF223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -106,12 +102,18 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F5318BA5282190CE00A5DC76 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F5A4AD9C2819B46000CCE178 = {
 			isa = PBXGroup;
 			children = (
 				F5A4ADA72819B46000CCE178 /* FoodGuru */,
 				F5A4ADB82819B46200CCE178 /* FoodGuruTests */,
-				F5A4ADC22819B46300CCE178 /* FoodGuruUITests */,
 				F5A4ADA62819B46000CCE178 /* Products */,
 				E6104867F50F9DD9905AA629 /* Pods */,
 				57F9BA59B2875022CAB0E8E0 /* Frameworks */,
@@ -155,15 +157,6 @@
 			path = FoodGuruTests;
 			sourceTree = "<group>";
 		};
-		F5A4ADC22819B46300CCE178 /* FoodGuruUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F5A4ADC32819B46300CCE178 /* FoodGuruUITests.swift */,
-				F5A4ADC52819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift */,
-			);
-			path = FoodGuruUITests;
-			sourceTree = "<group>";
-		};
 		F5A4ADD22819B90200CCE178 /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +168,7 @@
 		F5A4ADD32819B91000CCE178 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F5318BA5282190CE00A5DC76 /* Network */,
 				F5A4ADDE2819BFEC00CCE178 /* Views */,
 				F5A4ADD52819B9E900CCE178 /* Constants */,
 			);
@@ -427,8 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A4ADC62819B46300CCE178 /* FoodGuruUITestsLaunchTests.swift in Sources */,
-				F5A4ADC42819B46300CCE178 /* FoodGuruUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
