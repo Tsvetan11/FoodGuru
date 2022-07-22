@@ -6,6 +6,6 @@ target 'FoodGuru' do
 
   # Pods for FoodGuru
 
-  pod 'R.swift'
+	pod 'R.swift'
 
 end

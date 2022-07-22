@@ -6,7 +6,13 @@
   
 */
 
-//MARK: - Landing
+// MARK: - APIError
+
+"api_error_decode" = "Decode error";
+"api_error_unauthorized" = "Session expired";
+"api_error_unknown" = "Unknown error";
+
+// MARK: - Landing
 
 "landing_screen_title" = "Welcome to FoodGuru your best friend when you are hungry";
 "landing_screen_get_started_button_title" = "Get started";

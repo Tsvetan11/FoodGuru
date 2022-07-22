@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SPOONACULAR_API_KEY</key>
+	<string>cd64c4291c404b0d8dc75ffce6f10590</string>
+	<key>SPOONACULAR_API_BASE_URL</key>
+	<string>api.spoonacular.com</string>
+</dict>
+</plist>

@@ -6,7 +6,13 @@
   
 */
 
-//MARK: - Landing
+// MARK: - APIError
+
+"api_error_decode" = "Декодинг ерор";
+"api_error_unauthorized" = "Изтекла сесия";
+"api_error_unknown" = "Непознат ерор";
+
+// MARK: - Landing
 
 "landing_screen_title" = "Добре дошли във FoodGuru, вашият най-добър приятел, когато сте гладни!";
 "landing_screen_get_started_button_title" = "Започни";

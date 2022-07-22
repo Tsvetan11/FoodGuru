@@ -88,6 +88,20 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
 
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `APIConfig.plist`.
+    static let apiConfigPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "APIConfig", pathExtension: "plist")
+
+    /// `bundle.url(forResource: "APIConfig", withExtension: "plist")`
+    static func apiConfigPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.apiConfigPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
     /// Image `FoodGuru`.
@@ -105,16 +119,43 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 5 localization keys.
     struct localizable {
+      /// en translation: Decode error
+      ///
+      /// Locales: en, bg-BG
+      static let api_error_decode = Rswift.StringResource(key: "api_error_decode", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "bg-BG"], comment: nil)
       /// en translation: Get started
       ///
       /// Locales: en, bg-BG
       static let landing_screen_get_started_button_title = Rswift.StringResource(key: "landing_screen_get_started_button_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "bg-BG"], comment: nil)
+      /// en translation: Session expired
+      ///
+      /// Locales: en, bg-BG
+      static let api_error_unauthorized = Rswift.StringResource(key: "api_error_unauthorized", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "bg-BG"], comment: nil)
+      /// en translation: Unknown error
+      ///
+      /// Locales: en, bg-BG
+      static let api_error_unknown = Rswift.StringResource(key: "api_error_unknown", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "bg-BG"], comment: nil)
       /// en translation: Welcome to FoodGuru your best friend when you are hungry
       ///
       /// Locales: en, bg-BG
       static let landing_screen_title = Rswift.StringResource(key: "landing_screen_title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "bg-BG"], comment: nil)
+
+      /// en translation: Decode error
+      ///
+      /// Locales: en, bg-BG
+      static func api_error_decode(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("api_error_decode", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "api_error_decode"
+        }
+
+        return NSLocalizedString("api_error_decode", bundle: bundle, comment: "")
+      }
 
       /// en translation: Get started
       ///
@@ -129,6 +170,36 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("landing_screen_get_started_button_title", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Session expired
+      ///
+      /// Locales: en, bg-BG
+      static func api_error_unauthorized(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("api_error_unauthorized", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "api_error_unauthorized"
+        }
+
+        return NSLocalizedString("api_error_unauthorized", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Unknown error
+      ///
+      /// Locales: en, bg-BG
+      static func api_error_unknown(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("api_error_unknown", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "api_error_unknown"
+        }
+
+        return NSLocalizedString("api_error_unknown", bundle: bundle, comment: "")
       }
 
       /// en translation: Welcome to FoodGuru your best friend when you are hungry

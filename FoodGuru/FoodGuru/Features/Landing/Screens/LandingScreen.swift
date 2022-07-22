@@ -49,9 +49,10 @@ struct LandingScreen: View {
 
 	// MARK: - Body
 
-    var body: some View {
+	var body: some View {
 		VStack {
-			NavigationLink(destination: Text(""), isActive: $showHomeScreen) { EmptyView() }
+			NavigationLink(destination: HomeScreen(viewModel: DependencyManager.shared.resolveHomeViewModel()),
+						   isActive: $showHomeScreen) { EmptyView() }
 
 			logo
 
@@ -68,7 +69,7 @@ struct LandingScreen: View {
 			Color.yellow
 				.ignoresSafeArea(.all)
 		)
-    }
+	}
 }
 
 // MARK: - Views
@@ -126,10 +127,4 @@ extension LandingScreen {
 			.scaleEffect(Constants.progeressViewScale)
 			.padding(.top, Constants.buttonTopPadding)
 	}
-}
-
-struct LandingScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        LandingScreen()
-    }
 }
